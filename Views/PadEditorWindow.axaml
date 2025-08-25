@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Window xmlns="https://github.com/avaloniaui"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        x:Class="Soundboard.Universal.Views.PadEditorWindow"
+        Width="520" Height="360"
+        CanResize="False"
+        WindowStartupLocation="CenterOwner"
+        Title="Pad Settings">
+  <Grid RowDefinitions="Auto,Auto,Auto,Auto,Auto,* ,Auto" ColumnDefinitions="120,*">
+    <TextBlock Grid.Row="0" Grid.Column="0" Text="Text (Label):" Margin="10" VerticalAlignment="Center"/>
+    <TextBox   Grid.Row="0" Grid.Column="1" Margin="10" Name="TxtLabel"/>
+
+    <TextBlock Grid.Row="1" Grid.Column="0" Text="Audio File:" Margin="10" VerticalAlignment="Center"/>
+    <StackPanel Grid.Row="1" Grid.Column="1" Orientation="Horizontal" Margin="10">
+      <TextBox Name="TxtFile" Width="320"/>
+      <Button Name="BtnBrowse" Content="..." Width="40" Margin="8,0,0,0"/>
+    </StackPanel>
+
+    <TextBlock Grid.Row="2" Grid.Column="0" Text="Mode:" Margin="10" VerticalAlignment="Center"/>
+    <StackPanel Grid.Row="2" Grid.Column="1" Orientation="Horizontal" Margin="10">
+      <RadioButton Name="RbCut" Content="Cut" IsChecked="False"/>
+      <RadioButton Name="RbOverlap" Content="Overlap" Margin="16,0,0,0" IsChecked="True"/>
+    </StackPanel>
+
+    <TextBlock Grid.Row="3" Grid.Column="0" Text="Volume (0..1):" Margin="10" VerticalAlignment="Center"/>
+    <TextBox   Grid.Row="3" Grid.Column="1" Margin="10" Name="TxtVolume" Text="1.0"/>
+
+    <TextBlock Grid.Row="4" Grid.Column="0" Text="Color (#RRGGBB):" Margin="10" VerticalAlignment="Center"/>
+    <TextBox   Grid.Row="4" Grid.Column="1" Margin="10" Name="TxtColor" Text="#2d2d2d"/>
+
+    <StackPanel Grid.Row="6" Grid.ColumnSpan="2" Orientation="Horizontal" HorizontalAlignment="Right" Margin="10">
+      <Button Name="BtnOk" Content="OK" Width="80" Margin="0,0,8,0"/>
+      <Button Name="BtnCancel" Content="Cancel" Width="80"/>
+    </StackPanel>
+  </Grid>
+</Window>

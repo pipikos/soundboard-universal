@@ -1,0 +1,22 @@
+{
+  "GridRows": 4,
+  "GridCols": 4,
+  "ButtonFontSize": 14,
+  "ButtonPadding": 6,
+  "Pads": [
+    {
+      "Label": "Intro",
+      "FilePath": "C:\\\\Music\\\\intro.wav",
+      "Mode": "Cut",
+      "Volume": 1.0,
+      "Color": "#3b82f6"
+    },
+    {
+      "Label": "Clap",
+      "FilePath": "/home/user/sounds/clap.mp3",
+      "Mode": "Overlap",
+      "Volume": 0.9,
+      "Color": "#16a34a"
+    }
+  ]
+}
